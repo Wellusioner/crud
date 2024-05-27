@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: sans-serif;
+  background-color: #F9FBFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-block{
+  padding: 2rem;
+  padding-top: 5rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 2rem;
+}
+
+.title{
+  margin-bottom: 20px;
+}
+.form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.form input{
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  font-size: 20px;
+  outline: none;
+  box-shadow: none;
+  margin-right: 10px;
+  background-color: #FBFBFD;
+}
+input.name{
+  flex-grow: 1;
+}
+
+
+
+.custom-button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.add-button{
+  background-color: #4a3bfb;
+  color: #fff;
+  font-size: 20px;
+}
+
+.reset-button{
+  margin-left: 8px;
+  background-color: #eee;
+}
+
+.edit-button{
+  color: #0ac98a;
+  background-color: #e4f9f2;
+}
+
+
+
+.title{
+  text-align: center;
+  font-size: 30px;
+}
+
+table{
+  width: 100%;
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+th{
+  font-weight: 500;
+}
+tr{
+  background-color: #fafafa;
+  box-shadow: 0 6px 8px rgba(0,0,0, 0.04);
+  border-radius: 3px;
+}
+
+th, td{
+  padding: 15px 20px;
+  background-color: #fff;
+}
+
+tr td:first-child,
+tr th:first-child{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+tr td:last-child,
+tr th:last-child{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.action-group{
+  text-align: right;
+}
+
+table button{
+  color: #f8485c;
+  background-color: #f9e4e4;
+}
+
+.not-found{
+  background-color: #fff;
+  box-shadow: 0 6px 8px rgba(0,0,0, 0.04);
+  padding: 100px 20px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 300;
+  border-radius: 10px;
+}
+
+table{
+  counter-reset: rowNumber;
+}
+
+table tbody tr{
+  counter-increment: rowNumber;
+}
+
+table tbody tr td:first-child::before{
+  content: counter(rowNumber);
+}

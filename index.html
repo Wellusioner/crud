@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>Invoice List</title>
+</head>
+<body>
+
+	<section class="top-block">
+		<div class="container">
+			<form class="form">
+				<input class="name" type="text" placeholder="Fullname" required>
+				<input class="date" type="date" placeholder="Date" required>
+				<input class="budget" type="text" placeholder="Budget" required>
+				<button class="custom-button add-button" type="submit">Add user</button>
+				<button class="custom-button reset-button" type="reset">&#10227;</button>
+			</form>
+		</div>
+	</section>
+
+<main>
+	<div class="container">
+		<h1 class="title">Users list</h1>
+    
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 5%">ID</th>
+          <th style="width: 40%;">Fullname</th>
+          <th>Date</th>
+          <th colspan="2">Budget</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+<!--
+        <tr>
+          <td>1</td>
+          <td>Fullname</td>
+          <td>Date</td>
+          <td>$400</td>
+          <td>
+            <div class="action-group">
+              <button class="custom-button remove-button" type="button">Delete</button>
+            </div>
+          </td>
+        </tr>
+-->
+        
+      </tbody>
+    </table>
+    <div class="not-found">
+      No user found. Add one
+    </div>
+	</div>
+</main>
+
+<script src="./script.js"></script>
+</body>
+</html>
